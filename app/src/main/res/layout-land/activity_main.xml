@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/app_name"
+    android:orientation="vertical"
+    tools:context="MainActivity"
+    android:gravity="right">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:freezesText="true"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/info"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@+id/result"-->
+            <!--android:freezesText="true"-->
+            <!--android:gravity="right"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:hint="0"-->
+            <!--android:textSize="25sp" />-->
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btnsin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:text="Sin"
+            android:enabled="true"
+            />
+
+        <Button
+            android:id="@+id/btnlog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:enabled="true"
+            android:text="Log"
+            />
+
+        <Button
+            android:id="@+id/btnCE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#F87066"
+            android:textSize="@dimen/t_size"
+            android:text="C"
+            />
+
+        <Button
+            android:id="@+id/btnx2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#F87066"
+            android:textSize="@dimen/t_size"
+            android:text="x2"
+            />
+
+        <Button
+            android:id="@+id/btnper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#F87066"
+            android:enabled="true"
+            android:text="Del"
+            />
+
+        <Button
+            android:id="@+id/btndiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:textSize="@dimen/t_size"
+            android:text="/"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btncos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:enabled="true"
+            android:text="Cos"
+            />
+
+        <Button
+            android:id="@+id/btnexp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:enabled="true"
+            android:text="exp"
+            />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="@color/numbtn"
+            android:text="7"
+            />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="8"
+            />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="9"
+            />
+
+        <Button
+            android:id="@+id/btnmul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:textSize="@dimen/t_size"
+            android:text="*"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btntan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:enabled="true"
+            android:background="#56CE5B"
+            android:text="Tan"
+            />
+
+        <Button
+            android:id="@+id/btnmod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:enabled="true"
+            android:text="Mod"
+            />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="4"
+            />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="5"
+            />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="6"
+            />
+
+        <Button
+            android:id="@+id/btnsub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:textSize="@dimen/t_size"
+            android:text="-"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btnrt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:text="√"
+            />
+
+        <Button
+            android:id="@+id/btnxp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="#56CE5B"
+            android:enabled="true"
+            android:text="x^"
+            />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/t_size"
+            android:background="@color/numbtn"
+            android:text="1"
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="2"
+            />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:textSize="@dimen/t_size"
+            android:text="3"
+            />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:textSize="@dimen/t_size"
+            android:text="+"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:enabled="false"
+            android:background="@color/nobtn"
+            android:textSize="@dimen/t_size" />
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:enabled="false"
+            android:background="@color/nobtn"
+            android:textSize="@dimen/t_size" />
+
+        <Button
+            android:id="@+id/btnBL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:text="+-"
+            android:textSize="@dimen/t_size"
+            />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="@color/numbtn"
+            android:text="0"
+            android:textSize="@dimen/t_size" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:text="."
+            android:textSize="@dimen/t_size" />
+
+        <Button
+            android:id="@+id/btnequal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:background="#55C9FF"
+            android:text="="
+            android:textSize="@dimen/t_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
